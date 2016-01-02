@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3570200538
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 300b12b87a864d0fe2dfb2134eb551f3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/se_eating.mp3
+Dependencies: []

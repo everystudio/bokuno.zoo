@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 2534201675
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c177eb000ce017e3759dd83e14d58111
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 00ffc586b3c4c12c72c7fed589b81235
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sprite/bg/bg001.png
+Dependencies: []

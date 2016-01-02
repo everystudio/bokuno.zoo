@@ -1,0 +1,44 @@
+{"frames": {
+
+"bg_list.png":
+{
+	"frame": {"x":4,"y":4,"w":640,"h":1136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":1136},
+	"sourceSize": {"w":640,"h":1136}
+},
+"bg_main.png":
+{
+	"frame": {"x":648,"y":4,"w":640,"h":1136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":1136},
+	"sourceSize": {"w":640,"h":1136}
+},
+"bg_table.png":
+{
+	"frame": {"x":4,"y":1144,"w":640,"h":810},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":810},
+	"sourceSize": {"w":640,"h":810}
+},
+"bg_zukan1.png":
+{
+	"frame": {"x":1292,"y":4,"w":640,"h":1136},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":640,"h":1136},
+	"sourceSize": {"w":640,"h":1136}
+}},
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "menuUI_3.png",
+	"format": "RGBA8888",
+	"size": {"w":2048,"h":2048},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:4877aab427b8caf011f0c6b62c070b6e:0d1187d3a882ab2f60766a3a9f7e5430:c9670f757baf8e414ab326ac495c20ae$"
+}
+}

@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1084837726
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 013195f939ac9f04b265d4a4170d9bcb
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ea1396e1b66bfeaa1c7d6fee455946f1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Prefab/tetetete.prefab
+Dependencies: []

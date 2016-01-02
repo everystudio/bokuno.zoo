@@ -1,0 +1,165 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets/assetbundleresource/sound/select_button.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: assets/assetbundleresource/sound/se/buildup.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: assets/assetbundleresource/sound/bgm/bgm_main.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: assets/assetbundleresource/sound/bgm/bgm_work.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: assets/assetbundleresource/sound/bgm/bgm_shop.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: assets/assetbundleresource/sound/se/tabchange.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: assets/assetbundleresource/sound/se/fooddrop.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: assets/assetbundleresource/sound/se/setanimal.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: assets/assetbundleresource/sound/se/setins.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: assets/assetbundleresource/sound/se/btn_normal.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: assets/assetbundleresource/sound/se/btn_cancel.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: assets/assetbundleresource/sprite/garalley_003.unity3d
+      Dependencies: {}
+    Info_12:
+      Name: assets/assetbundleresource/sprite/bg/bg001.unity3d
+      Dependencies: {}
+    Info_13:
+      Name: assets/assetbundleresource/sprite/bg/bg002.unity3d
+      Dependencies: {}
+    Info_14:
+      Name: assets/assetbundleresource/sound/se/se_cleanup.unity3d
+      Dependencies: {}
+    Info_15:
+      Name: assets/assetbundleresource/sound/se/se_cash.unity3d
+      Dependencies: {}
+    Info_16:
+      Name: assets/assetbundleresource/sound/se/se_levelup.unity3d
+      Dependencies: {}
+    Info_17:
+      Name: assets/assetbundleresource/sound/se/se_eat.unity3d
+      Dependencies: {}
+    Info_18:
+      Name: assets/assetbundleresource/sound/se/se_eating.unity3d
+      Dependencies: {}
+    Info_19:
+      Name: assets/assetbundleresource/sound/se/se_cure.unity3d
+      Dependencies: {}
+    Info_20:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial10.unity3d
+      Dependencies: {}
+    Info_21:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial_cleanup.unity3d
+      Dependencies: {}
+    Info_22:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial_setting.unity3d
+      Dependencies: {}
+    Info_23:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial777.unity3d
+      Dependencies: {}
+    Info_24:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial18.unity3d
+      Dependencies: {}
+    Info_25:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial13.unity3d
+      Dependencies: {}
+    Info_26:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial888.unity3d
+      Dependencies: {}
+    Info_27:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial8.unity3d
+      Dependencies: {}
+    Info_28:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial12.unity3d
+      Dependencies: {}
+    Info_29:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial_manpuku.unity3d
+      Dependencies: {}
+    Info_30:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial17.unity3d
+      Dependencies: {}
+    Info_31:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial2.unity3d
+      Dependencies: {}
+    Info_32:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial_next.unity3d
+      Dependencies: {}
+    Info_33:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial15.unity3d
+      Dependencies: {}
+    Info_34:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial5.unity3d
+      Dependencies: {}
+    Info_35:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial666.unity3d
+      Dependencies: {}
+    Info_36:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial1.unity3d
+      Dependencies: {}
+    Info_37:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial19.unity3d
+      Dependencies: {}
+    Info_38:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial4.unity3d
+      Dependencies: {}
+    Info_39:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial6.unity3d
+      Dependencies: {}
+    Info_40:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial555.unity3d
+      Dependencies: {}
+    Info_41:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial11.unity3d
+      Dependencies: {}
+    Info_42:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial7.unity3d
+      Dependencies: {}
+    Info_43:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial16.unity3d
+      Dependencies: {}
+    Info_44:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial3.unity3d
+      Dependencies: {}
+    Info_45:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial14.unity3d
+      Dependencies: {}
+    Info_46:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial21.unity3d
+      Dependencies: {}
+    Info_47:
+      Name: assets/assetbundleresource/sound/bgm/bgm_opening.unity3d
+      Dependencies: {}
+    Info_48:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial22.unity3d
+      Dependencies: {}
+    Info_49:
+      Name: assets/assetbundleresource/sprite/tutorial/tutorial20.unity3d
+      Dependencies: {}
+    Info_50:
+      Name: assets/assetbundleresource/sprite/review/popup_review.unity3d
+      Dependencies: {}
+    Info_51:
+      Name: assets/assetbundleresource/sprite/debt_finish.unity3d
+      Dependencies: {}
+    Info_52:
+      Name: assets/assetbundleresource/sprite/work_clear.unity3d
+      Dependencies: {}
+    Info_53:
+      Name: assets/assetbundleresource/sound/se/se_work_clear.unity3d
+      Dependencies: {}

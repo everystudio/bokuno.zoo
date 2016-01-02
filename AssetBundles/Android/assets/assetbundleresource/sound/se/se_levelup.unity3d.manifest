@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 87685468
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: cfaddd3ae70f3c6e7036b860f5d4621d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/se_levelup.mp3
+Dependencies: []

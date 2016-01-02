@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1138501939
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f2b6443f6643ff781713fb429e6ecb22
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 00ffc586b3c4c12c72c7fed589b81235
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sprite/debt_finish.png
+Dependencies: []

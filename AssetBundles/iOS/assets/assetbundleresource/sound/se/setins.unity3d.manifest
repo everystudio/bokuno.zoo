@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3186767825
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f30add8c1befef31e52b8ea2293003d0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/setIns.mp3
+Dependencies: []

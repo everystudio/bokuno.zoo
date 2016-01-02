@@ -1,0 +1,6 @@
+ManifestFileVersion: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: assets/assetbundleresource/sound/se/select_button.unity3d
+      Dependencies: {}

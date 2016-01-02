@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 1663400145
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 788d9f606cc58e458050825de2987552
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 00ffc586b3c4c12c72c7fed589b81235
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sprite/tutorial/tutorial666.png
+Dependencies: []

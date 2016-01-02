@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 4036998856
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 14af74560e7a0e6be206c8ffdde03be3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 00ffc586b3c4c12c72c7fed589b81235
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sprite/tutorial/tutorial20.png
+Dependencies: []

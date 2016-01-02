@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1644981704
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8129e98d6de05348c029258bc627f62f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/bgm/bgm_work.mp3
+Dependencies: []

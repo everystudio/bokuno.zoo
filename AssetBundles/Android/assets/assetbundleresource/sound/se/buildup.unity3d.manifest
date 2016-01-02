@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2105205834
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f0231e24416ee2032cfe802aadbcef86
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/buildup.mp3
+Dependencies: []

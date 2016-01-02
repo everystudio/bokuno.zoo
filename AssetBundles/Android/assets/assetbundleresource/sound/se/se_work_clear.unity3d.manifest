@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 2587737628
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a67e12e5e5545cd5388db190b471af96
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/se_work_clear.mp3
+Dependencies: []

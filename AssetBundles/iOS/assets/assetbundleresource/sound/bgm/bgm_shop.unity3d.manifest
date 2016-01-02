@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 333720041
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 11e9f89db701d8877c1a424cf8792989
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/bgm/bgm_shop.mp3
+Dependencies: []

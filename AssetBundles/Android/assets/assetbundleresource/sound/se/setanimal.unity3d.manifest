@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 1484319884
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: aa4704d7b71d79c81c247d35c789fe66
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c516f2a3b2b6b67ef759f6410a790acd
+HashAppended: 0
+ClassTypes:
+- Class: 83
+  Script: {instanceID: 0}
+Assets:
+- Assets/AssetBundleResource/Sound/se/setAnimal.mp3
+Dependencies: []
