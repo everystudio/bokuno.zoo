@@ -32,6 +32,7 @@ public class DataSave : MonoBehaviour {
 	DBWork m_dbWork;
 	DBMonster m_dbMonster;
 	DBMonsterMaster m_dbMonsterMaster;
+    DBStaff m_dbStaff;
 	#endregion
 
 	public bool m_bInitialized = false;
@@ -45,8 +46,8 @@ public class DataSave : MonoBehaviour {
 			m_dbMonster = new DBMonster (Define.DB_TABLE_ASYNC_MONSTER);
 			m_dbMonsterMaster = new DBMonsterMaster (Define.DB_TABLE_ASYNC_MONSTER_MASTER);
 			m_dbKvs = new DBKvs (Define.DB_TABLE_ASYNC_KVS);
-
-			m_fInterval = 0.0f;
+            m_dbStaff = new DBStaff(Define.DB_TABLE_ASYNC_STAFF);
+            m_fInterval = 0.0f;
 		}
 	}
 
@@ -57,7 +58,9 @@ public class DataSave : MonoBehaviour {
 		m_dbMonster.m_soDataMonster.Save ();
 		m_dbMonsterMaster.m_soDataMonsterMaster.Save ();
 		m_dbKvs.m_soDataKvs.Save ();
-	}
+        m_dbStaff.m_soDataStaff.Save();
+
+    }
 
 	// 個人的には邪道なんだけど
 	void Start(){
@@ -69,20 +72,13 @@ public class DataSave : MonoBehaviour {
 		m_dbMonster.m_soDataMonster.Load (DBMonster.FILE_NAME);
 		m_dbMonsterMaster.m_soDataMonsterMaster.Load (DBMonsterMaster.FILE_NAME);
 		m_dbKvs.m_soDataKvs.Load (DBKvs.FILE_NAME);
+        m_dbStaff.m_soDataStaff.Load(DBStaff.FILE_NAME);
 	}
 
 	void OnApplicationPause(bool pauseStatus) {
-		Debug.LogError ("here");
+		///Debug.LogError ("here");
 		Initialize ();
 		if (pauseStatus) {
-
-
-
-
-
-
-
-
 			save ();
 
 		} else {

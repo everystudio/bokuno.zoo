@@ -20,6 +20,8 @@ public class DatabaseAssetEditor : ScriptableObject {
 		foreach (string str in test) {
 			Debug.Log (str);
 		}
+
+        Debug.Log(Application.persistentDataPath);
 	}
 
 	[MenuItem ("Example/WhereCheck")]

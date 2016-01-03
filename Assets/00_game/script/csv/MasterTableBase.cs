@@ -13,7 +13,7 @@ public class MasterTableBase<T> where T : MasterBase, new()
 	public void Load(string filePath)
 	{
 		string path = filePath;
-		Debug.Log ( path );
+		//Debug.Log ( path );
 		var text = ((TextAsset)Resources.Load( path, typeof(TextAsset))).text;
 		text = text.Trim().Replace("\r", "") + "\n";
 		var lines = text.Split('\n').ToList();
