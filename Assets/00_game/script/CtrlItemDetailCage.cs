@@ -116,7 +116,6 @@ public class CtrlItemDetailCage : CtrlItemDetailBase {
 
 		// 片付けルートは別にする必要あり
 
-
 		return;
 	}
 

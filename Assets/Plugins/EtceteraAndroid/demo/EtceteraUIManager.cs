@@ -186,7 +186,7 @@ public class EtceteraUIManager : MonoBehaviourGUI
 
 		if( bottomRightButton( "Next Scene" ) )
 		{
-			Application.LoadLevel( "EtceteraTestSceneTwo" );
+			//Application.LoadLevel( "EtceteraTestSceneTwo" );
 		}
 	}
 

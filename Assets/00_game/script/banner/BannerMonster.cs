@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System;
 
 [RequireComponent(typeof(ButtonBase))]
 public class BannerMonster : BannerBase {
@@ -309,8 +310,12 @@ public class BannerMonster : BannerBase {
 
 				Dictionary< string , string > dict = new Dictionary< string , string > ();
 				int iConditionFine = (int)Define.Monster.CONDITION.FINE;
-				dict.Add( "condition" , iConditionFine.ToString() ); 
-				dict.Add( "clean_time" , string.Format( "\"{0}\" " , TimeManager.StrGetTime()) ); 
+				dict.Add( "condition" , iConditionFine.ToString() );
+				DateTime setDate = TimeManager.GetNow();
+				setDate = setDate.AddSeconds(-1 * 60 * 60 * 2);
+				string strSetTime = setDate.ToString(TimeManager.DATE_FORMAT);
+
+				dict.Add( "clean_time" , string.Format( "\"{0}\" " , strSetTime) ); 
 				Debug.Log (TimeManager.StrGetTime ());
 				GameMain.dbMonster.Update (m_dataMonster.monster_serial , dict );
 				m_eStep = STEP.IDLE;

@@ -117,7 +117,7 @@ public class CtrlIconMonster : CtrlIconBase {
 			}
 			*/
 
-			if (iCleanLevel <= 1 && m_dataMonster.condition == (int)Define.Monster.CONDITION.FINE ) {
+			if (iCleanLevel < 1 && m_dataMonster.condition == (int)Define.Monster.CONDITION.FINE ) {
 				Dictionary< string , string > dict = new Dictionary< string , string > ();
 				dict.Add ("condition", ((int)(Define.Monster.CONDITION.SICK)).ToString ()); 
 				GameMain.dbMonster.Update (m_dataMonster.monster_serial, dict);

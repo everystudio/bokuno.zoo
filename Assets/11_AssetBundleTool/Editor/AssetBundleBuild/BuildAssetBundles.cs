@@ -56,13 +56,28 @@ public class BuildAssetBundles : EditorWindow {
 		UnityEngine.Object[] selection = new UnityEngine.Object[1];
 		selection[0] = dataObject;
 
+
+
 		BuildPipeline.BuildAssetBundle(Selection.activeObject,
-            selection, path +_strBuildUrl + basename +".unity3d",
+			selection, path + _strBuildUrl + basename + ".unity3d");
+		/*
 			BuildAssetBundleOptions.CollectDependencies |
 			BuildAssetBundleOptions.CompleteAssets,
             target);
+			*/
+		/*
+        BuildPipeline.BuildAssetBundle(Selection.activeObject, selection,
+            path + _strBuildUrl + basename + ".unity3d" ,
+            BuildAssetBundleOptions.CollectDependencies |
+            BuildAssetBundleOptions.CompleteAssets, target);
+            
+    */
+
+
 
 		return;
+
+
 	}
 
     static void BuildStartGameData (string _dataClassName,BuildTarget target){
