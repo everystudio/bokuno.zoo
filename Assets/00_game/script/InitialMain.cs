@@ -57,6 +57,8 @@ public class InitialMain : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
+		Debug.Log (Application.persistentDataPath);
 	
 		Application.targetFrameRate = 60;
 		QualitySettings.vSyncCount = 0;

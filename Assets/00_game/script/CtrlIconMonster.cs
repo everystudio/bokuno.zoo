@@ -21,7 +21,7 @@ public class CtrlIconMonster : CtrlIconBase {
 	}
 
 	public GameObject m_goDust;
-	public GameObject m_goMeal;
+	//public GameObject m_goMeal;
 
 	public void createDust (){
 		if (m_goDust == null) {

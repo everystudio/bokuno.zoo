@@ -4,7 +4,11 @@ using System.Collections;
 public class CsvMonster : MasterTableBase<CsvMonsterData> {
 
 	private static readonly string FilePath = "csv/monster";
-	public void Load() { Load(FilePath); }
+	public void Load() { Load(FilePath); 	
+		foreach (CsvMonsterData data in All) {
+			Debug.LogError(data.name);
+		}
+	}
 }
 
 public class CsvMonsterData : MasterBase

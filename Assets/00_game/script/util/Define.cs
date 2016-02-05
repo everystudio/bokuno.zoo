@@ -35,11 +35,11 @@ public class Define : MonoBehaviour {
 	#if UNITY_ANDROID
 	public const string ASSET_BUNDLE_PREFIX             = "android";
 	public const string ASSET_BUNDLES_ROOT              = "AssetBundles/Android";
-	public const string S3_SERVER_HEADER = "http://ad.xnosserver.com/apps/myzoo_data/Android/assets/assetbundleresource";
+	public const string S3_SERVER_HEADER = "http://ad.xnosserver.com/apps/myzoo_data/bokunosuizokukan/Android/assets/assetbundleresource";
 	#else
 	public const string ASSET_BUNDLE_PREFIX             = "iphone";
 	public const string ASSET_BUNDLES_ROOT              = "AssetBundles/iOS";
-	public const string S3_SERVER_HEADER = "http://ad.xnosserver.com/apps/myzoo_data/iOS/assets/assetbundleresource";
+	public const string S3_SERVER_HEADER = "http://ad.xnosserver.com/apps/myzoo_data/bokunosuizokukan/iOS/assets/assetbundleresource";
 	#endif
 
 	//public const string S3_SERVER_HEADER = "https://s3-ap-northeast-1.amazonaws.com/every-studio/xnos/osakanamikke/assetbundleresource";
