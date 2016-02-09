@@ -22,9 +22,9 @@ public class AdsManager : MonoBehaviour {
 	//public static readonly string IMOBILE_SID_RECT = "391442";
 	#elif UNITY_ANDROID
 	public static readonly string IMOBILE_PID = "34367";
-	public static readonly string IMOBILE_MID = "215444";
-	public static readonly string IMOBILE_SID_ICON = "622057";
-	public static readonly string IMOBILE_SID_BANNER = "622056";
+	public static readonly string IMOBILE_MID = "247749";
+	public static readonly string IMOBILE_SID_ICON = "760610";
+	public static readonly string IMOBILE_SID_BANNER = "760609";
 	public static readonly string IMOBILE_SID_RECT = "412437";
 	#endif
 
