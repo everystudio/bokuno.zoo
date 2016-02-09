@@ -52,6 +52,10 @@ public class DataMonster : SODataParam{
 		//Debug.Log (diffSec.ToString() + ":" + condition.ToString() );
 		CsvMonsterData csvMonster = DataManager.GetMonster (monster_id);
 		double dCount = diffSec / csvMonster.revenew_interval;
+
+		if (1 < dCount) {
+			dCount = 1;
+		}
 		int iCollectGold = (int)dCount * csvMonster.revenew_coin;
 		int iCollectExp = (int)dCount * csvMonster.revenew_exp;
 		if (_bCollect) {
