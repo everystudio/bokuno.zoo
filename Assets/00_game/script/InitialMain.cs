@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -290,9 +291,9 @@ public class InitialMain : MonoBehaviour {
 					}
 
 				}
-
 				m_btnStart.TriggerClear ();
-				Application.LoadLevel ("park_main");
+				SceneManager.LoadScene ("park_main");
+				//Application.LoadLevel ("park_main");
 			}
 			break;
 
