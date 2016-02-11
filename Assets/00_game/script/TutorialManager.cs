@@ -27,9 +27,8 @@ public class TutorialManager : MonoBehaviour {
 	}
 	public void initialize(){
 		DontDestroyOnLoad(gameObject);
-
 		//PlayerPrefs.SetInt (Define.KEY_TUTORIAL_PARENT_ID , 3);
-
+		//PlayerPrefs.DeleteKey(Define.KEY_TUTORIAL_PARENT_ID);
 		int iParentTutorialId = 0;
 		if (PlayerPrefs.HasKey (Define.KEY_TUTORIAL_PARENT_ID)) {
 			iParentTutorialId = PlayerPrefs.GetInt (Define.KEY_TUTORIAL_PARENT_ID);
@@ -49,6 +48,7 @@ public class TutorialManager : MonoBehaviour {
 				m_eStep = STEP.COMMAND;
 			}
 		}
+		//m_eStep = STEP.END;
 
 
 		return;

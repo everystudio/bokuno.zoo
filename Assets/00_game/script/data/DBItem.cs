@@ -19,8 +19,6 @@ public class DBItem : DBDataBase {
 	public DBItem( SQLiteAsync _Async ):base(_Async){
 	}
 	public DBItem( string _strAsyncName ):base(_strAsyncName){
-
-
 		m_soDataItem = PrefabManager.Instance.PrefabLoadInstance ("NameChange").GetComponent<SODataItem> ();
 		//m_soDataItem = PrefabManager.Instance.PrefabLoadInstance (FILE_NAME).GetComponent<SODataItem> ();
 		//m_soDataItem = new SODataItem ();

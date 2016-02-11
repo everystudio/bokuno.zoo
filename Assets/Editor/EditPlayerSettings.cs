@@ -34,6 +34,8 @@ public class EditPlayerSettings : ScriptableWizard
 
 			// 設定ボタンでキャッシュクリア
 			Caching.CleanCache();
+			Debug.Log ("cache clear");
+
 
 			//Debug.Log( "現在の環境は:" + m_eEnviroment );
 			string strBundleIdentify = "none";
