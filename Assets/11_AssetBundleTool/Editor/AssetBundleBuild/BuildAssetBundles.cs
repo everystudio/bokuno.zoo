@@ -57,9 +57,10 @@ public class BuildAssetBundles : EditorWindow {
 		selection[0] = dataObject;
 
 
-
+/*
 		BuildPipeline.BuildAssetBundle(Selection.activeObject,
 			selection, path + _strBuildUrl + basename + ".unity3d");
+			*/
 		/*
 			BuildAssetBundleOptions.CollectDependencies |
 			BuildAssetBundleOptions.CompleteAssets,
@@ -149,12 +150,13 @@ public class BuildAssetBundles : EditorWindow {
         selection[0] = obj;
 
         //Debug.LogWarning("buildURL :" + path + "/" + buildURL + "/" + basename + ".iphone.unity3d");
-
+		/*
         BuildPipeline.BuildAssetBundle(Selection.activeObject,
             selection, path + "/" + buildURL + "/" + basename +".unity3d",
             BuildAssetBundleOptions.CollectDependencies |
             BuildAssetBundleOptions.CompleteAssets,
             target);
+            */
     }
 
     public static void BuildStartAudio (string buildItem,BuildTarget target = BuildTarget.iOS){
