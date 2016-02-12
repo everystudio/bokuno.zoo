@@ -195,8 +195,8 @@ public class InitialMain : MonoBehaviour {
 			if (true) {
 				//if (m_tkKvsOpen.Completed) {
 
-				if (m_dbKvs.ReadInt (Define.USER_SYOJIKIN) == 0) {
-					m_dbKvs.WriteInt (Define.USER_SYOJIKIN, 1000);
+				if (m_dbKvs.Read (Define.USER_SYOJIKIN).Equals(DBKvs.READ_ERROR_STRING) ) {
+					m_dbKvs.WriteInt (Define.USER_SYOJIKIN, 10000);
 				}
 
 				List<DataItem> data_item_list =  m_dbItem.SelectAll ();

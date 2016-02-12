@@ -24,7 +24,7 @@ public class DBKvs : DBDataBase {
 	public DBKvs( string _strAsyncName ):base(_strAsyncName){
 		m_soDataKvs = PrefabManager.Instance.PrefabLoadInstance (FILE_NAME).GetComponent<SODataKvs> ();
 	}
-	public string READ_ERROR_STRING = "sql_datamanager_read_error";
+	public const string READ_ERROR_STRING = "sql_datamanager_read_error";
 
 	/*
 		ここのWriteは即書き込み
