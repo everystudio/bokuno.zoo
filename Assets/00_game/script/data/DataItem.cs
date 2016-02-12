@@ -218,6 +218,10 @@ public class DataItem : SearchBase{
 			// お店自体金額回収
 			double diffSec = TimeManager.Instance.GetDiffNow (collect_time).TotalSeconds * -1.0d;
 			double dCount = diffSec / csv_item_data.revenue_interval;
+			if (1 < dCount) {
+				dCount = 1;
+			}
+
 			iShopCollectGold = (int)dCount * csv_item_data.revenue;
 
 			/*
@@ -247,8 +251,11 @@ public class DataItem : SearchBase{
 		CtrlFieldItem ctrlFieldItem = GameMain.ParkRoot.GetFieldItem (item_serial);
 
 		if (ctrlFieldItem != null && ctrlFieldItem.m_eRoad != Define.ROAD.CONNECTION_SHOP) {
-			iCollectGold/= 2;
-			iCollectExp /= 2;
+			//iCollectGold/= 2;
+			//iCollectExp /= 2;
+		} else {
+			iCollectGold +=iCollectGold/ 2;
+			iCollectExp  +=iCollectExp/ 2;
 		}
 
 		//Debug.Log( string.Format( "rate:{0}" ,fTotalRate ));
