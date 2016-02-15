@@ -67,7 +67,7 @@ public class CtrlMonsterDetail : MonoBehaviour {
 
 		DataMonsterMaster master_data = GameMain.dbMonsterMaster.Select (m_dataMonster.monster_id);
 
-		List<DataStaff> staff_list = GameMain.dbStaff.Select (string.Format (" item_serial={0}", m_dataMonster.item_serial));
+		List<DataStaff> staff_list = GameMain.dbStaff.Select (string.Format (" item_serial = {0}", m_dataMonster.item_serial));
 
 		m_ctrlDispMonsterDetailStaff.Initialize (staff_list);
 

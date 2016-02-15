@@ -111,7 +111,7 @@ public class DBStaff : DBDataBase {
 	}
 
 	public List<DataStaff> Select(string _strWhere = null ){
-
+		Debug.Log (_strWhere);
 		List<DataStaff> ret_list = new List<DataStaff> ();
 		foreach (DataStaff data in m_soDataStaff.list) {
 			if (data.Equals( _strWhere )) {
