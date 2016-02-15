@@ -47,10 +47,12 @@ public class ReviewManager : MonoBehaviourEx {
 	}
 
 	public void Reviewed( REPLY _eReply ){
+		Debug.Log (_eReply);
 		switch (_eReply) {
 		case REPLY.REVIEWED:
 			m_eStatus = STATUS.REVIEWED;
-			Application.OpenURL ("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1052503169");
+			Application.OpenURL ("https://play.google.com/store/apps/details?id=jp.app.bokunosuizokukan");
+			//Application.OpenURL ("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=1052503169");
 			break;
 		case REPLY.RETRY:
 			m_iReviewIntervalCount = 0;
@@ -92,6 +94,7 @@ public class ReviewManager : MonoBehaviourEx {
 		}
 		m_bInitialized = true;
 		Instance.DummyCall ();
+		//m_eStatus = STATUS.READY_REVIEW;
 	}
 
 	public void DummyCall(){
