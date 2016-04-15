@@ -106,12 +106,13 @@ public class PurchasesManager : MonoBehaviour {
 			GoogleIABManager.consumePurchaseSucceededEvent += consumePurchaseSucceededEvent;
 			GoogleIABManager.consumePurchaseFailedEvent += consumePurchaseFailedEvent;
 			GoogleIAB.enableLogging (true);
-
 			string key = "your public key from the Android developer portal here";
 			// jp.app.bokunozoo
 			key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsqFXrg2t62dru/VFQYyxd2m1kORBbrAGxDxiSAkh3ybaXJtJWNcej/YAxKx7Orrtfq+pU965U2FnU3K54xddts2UGCI9O6TSU0AoKbwFYj+okfF21firsEqZd4aYtVYQ471flWj3ZEG9u2YpIzjGykUQadsxO4Y/OcRbdUn9289Mc0JAbdepmN9yRnvgBJWKZF/c0mBrM4ISfF5TVip2Tp+BXACqblOb+TQZjOB0OeVPxYpdy5k3eJTcQuwiLmYxgpEBL3tIT7grxVROgk8YYncncaZR7Q/wWlsFgFTNMRaF2bPI8apLiA7eIyKv5zbmhbE7YLBXUvkuoHbAqDQrLQIDAQAB";
 			// jp.app.bokuno.zoo
 			key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA3xplcFnhYvPYqsxu5D2hP/DwOYHTOUgy59ZUhLaUyEKyK9HZ5hpeDFFe2WqopiR2tM5aD6zRs1WFJqLKjoqoeMi4BwbtAcGOK1I5BDAe9YmDlGN+YEkG6nBPwEm+IZ1C9pLkAi9EoCc28xS/pUlwIPP8/PSMjTpTixO5S0lbKk5tY3VJyt454khCE/XFJMZd6C0j2sBiLwxi7vpZ3i5X0bl75sMr3fvIFdS7WT+m9slwsEZ9qDw/H0Uh01yA5gJn8CkNQ0x04gw+OrtepalTDvE4Lb/nzs6+1QwAi7jbvzPwCD9KDyhfEfLjjj/iOI9nkfjDMXt9d6+n6TCKROfsUwIDAQAB";
+
+			key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoNpjSDejTWrxkCnuj5BQ8ozItBVBS2OhgRga4D2zgG42rKy/9C5nb32NDIl+N9xaVh2eMRDVdR9Hzznp0DIE3Xs89le26pzht5dK4/9s01qsVHmuEtecAcXp6ItCieayYSTn9oMgDwd5LWJMQf8+w5vm1qo6Vlo2vh0Lm70DGqisp3pee+6K+Zb+UfPrcvv9tmo3zCpq9EyiPaitw58nSWJYzDuLHzubUj5qeH5OwcAXi/scEkJrD5dJKmkmUgnDTQ2xSP/UAmtN8qAUULej3iOlQCqVIGlSRqL5kA9Qo9fKUX9PU0hcFz6vnuNj9SN3dk/ocAIvvujFKsQjNHvNHQIDAQAB";
 			Debug.Log( key );
 			//下はテスト用
 			//key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArGLKSb92Imt43S40ArCXfTmQ31c+pFQTM0Dza3j/Tn4cqjwccjQ/jej68GgVyGXGC2gT/EtbcVVA+bHugXmyv73lGBgmQlzBL41WYTKolO8Z6pVWTeHBtsT7RcHKukoKiONZ7NiQ9P5t6CCPBB2sXQOp1y3ryVbv01xXlM+hB6HkkKxrT6lIjTbtiVXCHAJvqPexPbqVIfGjBaXH/oHKxEBxYDaa6PTUsU3OP3MTx63ycTEnEMsQlA1W6ZuTFIa5Jd3cVlfQI7uovEzAbIlUfwcnxVOUWASiYe81eQiD1BMl+JeCRhfd5e8D4n0LOA12rHm1F3fC9ZoIEjpNB+BRhwIDAQAB";
@@ -174,16 +175,16 @@ public class PurchasesManager : MonoBehaviour {
 
 	private static void UnlockProducts(string productIdentifier) {
 		Debug.Log (string.Format ("UnlockProducts:{0}", productIdentifier));
-		switch(productIdentifier) {
 		/*
+		switch(productIdentifier) {
 		case SMALL_PACK:
 			//code for adding small game money amount here
 			break;
 		case NC_PACK:
 			//code for unlocking cool item here
 			break;
-		*/
 		}
+				*/
 	}
 
 	private static void OnTransactionComplete (IOSStoreKitResult result) {

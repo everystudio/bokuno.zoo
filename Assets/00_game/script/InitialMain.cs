@@ -76,6 +76,8 @@ public class InitialMain : MonoBehaviour {
 		GoogleIAB.enableLogging (true);
 		string key = "your public key from the Android developer portal here";
 		key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsqFXrg2t62dru/VFQYyxd2m1kORBbrAGxDxiSAkh3ybaXJtJWNcej/YAxKx7Orrtfq+pU965U2FnU3K54xddts2UGCI9O6TSU0AoKbwFYj+okfF21firsEqZd4aYtVYQ471flWj3ZEG9u2YpIzjGykUQadsxO4Y/OcRbdUn9289Mc0JAbdepmN9yRnvgBJWKZF/c0mBrM4ISfF5TVip2Tp+BXACqblOb+TQZjOB0OeVPxYpdy5k3eJTcQuwiLmYxgpEBL3tIT7grxVROgk8YYncncaZR7Q/wWlsFgFTNMRaF2bPI8apLiA7eIyKv5zbmhbE7YLBXUvkuoHbAqDQrLQIDAQAB";
+		key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoNpjSDejTWrxkCnuj5BQ8ozItBVBS2OhgRga4D2zgG42rKy/9C5nb32NDIl+N9xaVh2eMRDVdR9Hzznp0DIE3Xs89le26pzht5dK4/9s01qsVHmuEtecAcXp6ItCieayYSTn9oMgDwd5LWJMQf8+w5vm1qo6Vlo2vh0Lm70DGqisp3pee+6K+Zb+UfPrcvv9tmo3zCpq9EyiPaitw58nSWJYzDuLHzubUj5qeH5OwcAXi/scEkJrD5dJKmkmUgnDTQ2xSP/UAmtN8qAUULej3iOlQCqVIGlSRqL5kA9Qo9fKUX9PU0hcFz6vnuNj9SN3dk/ocAIvvujFKsQjNHvNHQIDAQAB";
+
 		Debug.Log( key );
 		//下はテスト用
 		//key = "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArGLKSb92Imt43S40ArCXfTmQ31c+pFQTM0Dza3j/Tn4cqjwccjQ/jej68GgVyGXGC2gT/EtbcVVA+bHugXmyv73lGBgmQlzBL41WYTKolO8Z6pVWTeHBtsT7RcHKukoKiONZ7NiQ9P5t6CCPBB2sXQOp1y3ryVbv01xXlM+hB6HkkKxrT6lIjTbtiVXCHAJvqPexPbqVIfGjBaXH/oHKxEBxYDaa6PTUsU3OP3MTx63ycTEnEMsQlA1W6ZuTFIa5Jd3cVlfQI7uovEzAbIlUfwcnxVOUWASiYe81eQiD1BMl+JeCRhfd5e8D4n0LOA12rHm1F3fC9ZoIEjpNB+BRhwIDAQAB";
@@ -195,15 +197,13 @@ public class InitialMain : MonoBehaviour {
 			if (true) {
 				//if (m_tkKvsOpen.Completed) {
 
-				if (m_dbKvs.Read (Define.USER_SYOJIKIN).Equals(DBKvs.READ_ERROR_STRING) ) {
-					m_dbKvs.WriteInt (Define.USER_SYOJIKIN, 10000);
-				}
-
 				List<DataItem> data_item_list =  m_dbItem.SelectAll ();
 				// 最初しか通らない
 				if (data_item_list.Count == 0) {
 					Debug.LogError ("here");
 					m_dbKvs.WriteInt (Define.USER_SYAKKIN,300000000);
+					m_dbKvs.WriteInt (Define.USER_TICKET,5);
+					m_dbKvs.WriteInt (Define.USER_SYOJIKIN,10000);
 					var skitMasterTable = new MasterTableMapChip ();
 					skitMasterTable.Load ();
 					var csvItem = new CsvItem ();

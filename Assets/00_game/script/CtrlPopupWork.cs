@@ -159,6 +159,9 @@ public class CtrlPopupWork : MonoBehaviourEx{
 			}
 			if (m_btnClose.ButtonPushed) {
 				m_eStep = STEP.CLOSE;
+			} else if (Input.GetMouseButton (0)) {
+				m_eStep = STEP.CLOSE;
+			} else {
 			}
 			break;
 

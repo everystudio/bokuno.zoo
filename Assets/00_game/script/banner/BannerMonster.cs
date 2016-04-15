@@ -46,6 +46,8 @@ public class BannerMonster : BannerBase {
 	private DataMonsterMaster m_dataMonsterMaster;
 	public CtrlOjisanCheck m_ojisanCheck;
 
+	public bool m_bGoldLess;
+
 	public void Initialize( DataMonsterMaster _dataMaster , int _iCostNokori ){
 		m_bIsUserData = false;
 		m_eStep = STEP.IDLE;
@@ -289,35 +291,39 @@ public class BannerMonster : BannerBase {
 
 				int iCost = monster.revenew_coin * (int)(600.0f / (float)monster.revenew_interval);
 
-				bool bYesOnly = false;
+				m_bGoldLess = false;
 				string strText = string.Format ("こちらの動物を\n治療しますか\n\n治療費:{0}G\n\n{1}G → [FFD900]{2}[-]G", iCost , DataManager.user.m_iGold , DataManager.user.m_iGold -iCost );
 				if (DataManager.user.m_iGold < iCost) {
-					bYesOnly = true;
+					m_bGoldLess = true;
 					strText = string.Format ("こちらの動物を\n治療しますか\n治療費:{0}G\n\n[FFD900]GOLDが足りません[-]", iCost);
 				}
 
 				m_ojisanCheck = objOjisan.GetComponent<CtrlOjisanCheck> ();
-				m_ojisanCheck.Initialize ( strText , bYesOnly );
+				m_ojisanCheck.Initialize ( strText , m_bGoldLess );
 			}
 			if (m_ojisanCheck.IsYes ()) {
-				SoundManager.Instance.PlaySE ("se_cure");
-				CsvMonsterData monster = DataManager.GetMonster (m_dataMonster.monster_id);
-				int iCost = monster.revenew_coin * (int)(600.0f / (float)monster.revenew_interval);
-				DataManager.user.AddGold (-1 * iCost);
+				Debug.Log ("here");
+				if (m_bGoldLess) {
+				} else {
+					SoundManager.Instance.PlaySE ("se_cure");
+					CsvMonsterData monster = DataManager.GetMonster (m_dataMonster.monster_id);
+					int iCost = monster.revenew_coin * (int)(600.0f / (float)monster.revenew_interval);
+					DataManager.user.AddGold (-1 * iCost);
 
-				GameMain.ListRefresh = true;
+					GameMain.ListRefresh = true;
+
+					Dictionary< string , string > dict = new Dictionary< string , string > ();
+					int iConditionFine = (int)Define.Monster.CONDITION.FINE;
+					dict.Add ("condition", iConditionFine.ToString ());
+					DateTime setDate = TimeManager.GetNow ();
+					setDate = setDate.AddSeconds (-1 * 60 * 60 * 2);
+					string strSetTime = setDate.ToString (TimeManager.DATE_FORMAT);
+
+					dict.Add ("clean_time", string.Format ("\"{0}\" ", strSetTime)); 
+					Debug.Log (TimeManager.StrGetTime ());
+					GameMain.dbMonster.Update (m_dataMonster.monster_serial, dict);
+				}
 				Destroy (m_ojisanCheck.gameObject);
-
-				Dictionary< string , string > dict = new Dictionary< string , string > ();
-				int iConditionFine = (int)Define.Monster.CONDITION.FINE;
-				dict.Add( "condition" , iConditionFine.ToString() );
-				DateTime setDate = TimeManager.GetNow();
-				setDate = setDate.AddSeconds(-1 * 60 * 60 * 2);
-				string strSetTime = setDate.ToString(TimeManager.DATE_FORMAT);
-
-				dict.Add( "clean_time" , string.Format( "\"{0}\" " , strSetTime) ); 
-				Debug.Log (TimeManager.StrGetTime ());
-				GameMain.dbMonster.Update (m_dataMonster.monster_serial , dict );
 				m_eStep = STEP.IDLE;
 			} else if (m_ojisanCheck.IsNo ()) {
 				SoundManager.Instance.PlaySE (SoundName.BUTTON_PUSH);

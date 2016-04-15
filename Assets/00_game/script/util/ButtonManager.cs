@@ -25,7 +25,7 @@ public class ButtonManager : ButtonBase {
 	}
 
 
-	public void ButtonInit( int _intIndex = -1){
+	new public void ButtonInit( int _intIndex = -1){
 		// とりあえず初期化
 
 		//		Debug.Log("ButtonInit:length=" + m_csButtonList.Length  );

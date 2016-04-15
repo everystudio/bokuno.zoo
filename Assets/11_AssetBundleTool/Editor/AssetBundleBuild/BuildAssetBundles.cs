@@ -35,6 +35,7 @@ public class BuildAssetBundles : EditorWindow {
 	/// <param name="_strDataName">データ名.</param>
 	/// <param name="_strBuildUrl">データ保存パス.</param>
     public static void MakeAssetBundle(string _strpath,  string _strDataName , string _strBuildUrl ,BuildTarget target){
+		/*
 		UnityEngine.Object dataObject;
 
 		if(_strpath == null){
@@ -55,6 +56,7 @@ public class BuildAssetBundles : EditorWindow {
 
 		UnityEngine.Object[] selection = new UnityEngine.Object[1];
 		selection[0] = dataObject;
+		*/
 
 
 /*
@@ -96,24 +98,7 @@ public class BuildAssetBundles : EditorWindow {
 	}
 
 	public static void BuildStartAtlasSingle (string _strBuildPath , string _strFileName , string _strOutputPath , BuildTarget target ){
-		UnityEngine.Object loadObject = Resources.Load (_strBuildPath + _strFileName );
-		//UnityEngine.Object[] selection = Selection.GetFiltered (typeof(UnityEngine.Object), SelectionMode.DeepAssets);
-		UnityEngine.Object[] selection = new UnityEngine.Object[1];
-		selection[0] = loadObject;
-
-		//string path = Application.dataPath + "/" + _strOutputPath;
-		string path = Application.dataPath + "/../" + _strOutputPath;
-
-		Debug.Log (path);
-		Debug.Log (_strOutputPath);
-
-		// for Android
-		BuildPipeline.BuildAssetBundle(Selection.activeObject,
-			selection,
-			path  + _strFileName +".unity3d",
-			BuildAssetBundleOptions.CollectDependencies |
-			BuildAssetBundleOptions.CompleteAssets,
-			target);
+		
 
 	}
 

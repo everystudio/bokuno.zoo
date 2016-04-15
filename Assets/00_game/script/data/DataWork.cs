@@ -75,13 +75,18 @@ public class DataWork : SearchBase{
 	}
 
 	static public void WorkCheck(){
-		List<DataWork> check_work_list = GameMain.dbWork.Select ( string.Format(" status = {0} " , (int)Define.Work.STATUS.APPEAR));
-		foreach (DataWork work in check_work_list) {
-			if (work.ClearCheck ()) {
-				work.MissionClear ();
+
+		if (TutorialManager.Instance.IsTutorial ()) {
+			;// チュートリアル中はチェックしない
+		} else {
+			List<DataWork> check_work_list = GameMain.dbWork.Select (string.Format (" status = {0} ", (int)Define.Work.STATUS.APPEAR));
+			foreach (DataWork work in check_work_list) {
+				if (work.ClearCheck ()) {
+					work.MissionClear ();
+				}
 			}
+			DataWork.WorkOpen ();
 		}
-		DataWork.WorkOpen ();
 	}
 
 	static public void WorkOpen(){
